@@ -1,13 +1,14 @@
 {
   "name": "react-native-stars-rating",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "react-native stars rating component",
   "main": "lib/Stars.js",
   "scripts": {
-    "build": "rimraf lib && babel src --ignore '_*' --out-dir lib",
-    "prepublish": "npm run build",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run babel-prepublish && npm run flow-prepublish",
+    "babel-prepublish": "babel src/ -d lib",
+    "flow-prepublish": "flow-copy-source src lib --ignore '*-*'"
   },
   "files": [
     "lib"
@@ -17,6 +18,7 @@
     "babel-jest": "18.0.0",
     "babel-preset-react-native": "1.9.1",
     "flow-bin": "^0.38.0",
+    "flow-copy-source": "^1.1.0",
     "jest": "18.1.0",
     "react-test-renderer": "15.4.2",
     "rimraf": "^2.5.4"
