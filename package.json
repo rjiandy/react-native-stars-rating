@@ -32,12 +32,12 @@
     "react-native",
     "rating-stars",
     "stars",
-    "rating",
+    "rating"
   ],
   "author": "jiandy.ricky@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rjiandy/react-native-stars-rating/issues"
   },
-  "homepage": "https://github.com/rjiandy/react-native-stars-rating/#readme"
+  "readme": "https://github.com/rjiandy/react-native-stars-rating/#readme"
 }
