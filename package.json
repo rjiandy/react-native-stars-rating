@@ -1,7 +1,9 @@
 {
-  "name": "ReactNativeStarsRating",
+  "name": "react-native-stars-rating",
   "version": "0.0.1",
   "private": true,
+  "description": "react-native stars rating component",
+  "main": "lib/Stars.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -21,5 +23,21 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rjiandy/react-native-stars-rating.git"
+  },
+  "keywords": [
+    "react-native",
+    "rating-stars"
+    "stars"
+    "rating"
+  ],
+  "author": "jiandy.ricky@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjiandy/react-native-stars-rating/issues"
+  },
+  "homepage": "https://github.com/rjiandy/react-native-stars-rating/#readme"
 }
