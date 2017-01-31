@@ -56,10 +56,6 @@ export default class Stars extends Component {
           fontSize: size,
           color: color ? color : '#EEB211',
         };
-      } else {
-        starCustomStyle = {
-          color: color ? color : '#EEB211',
-        };
       }
       let rateCount = this.state.activeIndex * 2;
       let currIndex = 0;
@@ -155,7 +151,7 @@ export default class Stars extends Component {
               name={starShape}
               style={[styles.starIcon, starCustomStyle]}
             />
-            <TouchableWithoutFeedback onPress={() => this._changeActiveIndex(i)}>
+            <TouchableWithoutFeedback onPress={() => isActive ? this._changeActiveIndex(i) : null}>
               <View style={[styles.starFullLogicalPixel, customSize, extraStyle]} />
             </TouchableWithoutFeedback>
           </View>
@@ -169,7 +165,7 @@ export default class Stars extends Component {
               name={starShape}
               style={[styles.starIcon, starCustomStyle]}
             />
-            <TouchableWithoutFeedback onPress={() => this._changeActiveIndex(i)}>
+            <TouchableWithoutFeedback onPress={() => isActive ? this._changeActiveIndex(i) : null}>
               <View style={[styles.starFullLogicalPixel, customSize, extraStyle]} />
             </TouchableWithoutFeedback>
           </View>
