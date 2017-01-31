@@ -3,7 +3,7 @@ This is a simple rating component for react-native.
 
 ## Dependencies
 1. react-native-vector-icons
-2. class-autobind 
+2. class-autobind
 
 ## Installation
 `$ npm install react-native-stars-rating --save`
@@ -13,6 +13,8 @@ This is a simple rating component for react-native.
 
 ## Usage Example
 ```
+import Stars from 'react-native-stars-rating';
+
 <Stars
   isActive={true}
   rateMax={5}

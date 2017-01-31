@@ -1,6 +1,6 @@
 {
   "name": "react-native-stars-rating",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react-native stars rating component",
   "main": "lib/Stars.js",
   "scripts": {
