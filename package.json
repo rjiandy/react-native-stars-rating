@@ -4,6 +4,8 @@
   "description": "react-native stars rating component",
   "main": "lib/Stars.js",
   "scripts": {
+    "build": "rimraf lib && babel src --ignore '_*' --out-dir lib",
+    "prepublish": "npm run build",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -13,7 +15,8 @@
     "babel-preset-react-native": "1.9.1",
     "flow-bin": "^0.38.0",
     "jest": "18.1.0",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "15.4.2",
+    "rimraf": "^2.5.4"
   },
   "jest": {
     "preset": "react-native"
