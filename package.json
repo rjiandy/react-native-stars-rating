@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rjiandy/react-native-stars-rating.git"
+    "url": "https://github.com/rjiandy/react-native-stars-rating.git"
   },
   "keywords": [
     "react-native",
