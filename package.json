@@ -2,7 +2,7 @@
   "name": "react-native-stars-rating",
   "version": "0.0.3",
   "description": "react-native stars rating component",
-  "main": "src/Stars.js",
+  "main": "lib/Stars.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
