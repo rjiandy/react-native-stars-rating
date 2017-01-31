@@ -12,7 +12,7 @@ This is a simple rating component for react-native.
 `$ react-native link`
 
 ## Usage Example
-````
+```
 <Stars
   isActive={true}
   rateMax={5}
