@@ -30,7 +30,7 @@ export default class Stars extends Component {
     super(...arguments);
     autobind(this);
     this.state = {
-      activeIndex: this.props.rate === 0 && !this.props.isActive ? 1 : this.props.rate,
+      activeIndex: this.props.rate === 0 ? 1 : this.props.rate,
     };
   }
   _changeActiveIndex(i: number) {
