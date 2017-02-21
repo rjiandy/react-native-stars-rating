@@ -36,6 +36,16 @@ type Props = {
   isHalfStarEnabled?: boolean;
 };
 ```
+## Props Explanation
+Prop    | Description | Default | Required
+---     | ----------- | ------- | --------
+size   | The Size of the stars | 20 | _no_
+color  | Determine the color of the stars rating | #EEB211 | _no_
+rate    | Shows current rating for the star component to display | 0 _(if not active)_ or 1 _(if active)_ | __yes__
+rateMax | Determine the maximum stars rating to display | 5 | __yes__
+isActive| Enable the stars rating to be __clickable__ | `false` | __yes__
+onStarPress | A function that returns the current active rating number using callback | `null` | _no_
+isHalfStarEnabled | Enable the star rating component to support half rating | `false` | _no_ 
 
 ## IOS Showcase
 ![rn-stars-ios](https://cloud.githubusercontent.com/assets/20079730/22450974/10a889a0-e79d-11e6-96f8-2632a9e8cb40.gif)
