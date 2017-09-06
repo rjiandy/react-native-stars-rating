@@ -34,6 +34,7 @@ type Props = {
   isActive: boolean;
   onStarPress?: (rating: number) => void;
   isHalfStarEnabled?: boolean;
+  rounding: 'up' : 'down';
 };
 ```
 ## Props Explanation
@@ -45,7 +46,8 @@ rate    | Shows current rating for the star component to display | 0 _(if not ac
 rateMax | Determine the maximum stars rating to display | 5 | __yes__
 isActive| Enable the stars rating to be __clickable__ | `false` | __yes__
 onStarPress | A function that returns the current active rating number using callback | `null` | _no_
-isHalfStarEnabled | Enable the star rating component to support half rating | `false` | _no_ 
+isHalfStarEnabled | Enable the star rating component to support half rating | `false` | _no_
+rounding| Enabled rounding logic on rating (3.25 -> 3.5) if using up or vice versa | `down` | __yes__
 
 ## IOS Showcase
 ![rn-stars-ios](https://cloud.githubusercontent.com/assets/20079730/22450974/10a889a0-e79d-11e6-96f8-2632a9e8cb40.gif)

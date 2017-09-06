@@ -16,6 +16,7 @@ type Props = {
   isActive: boolean;
   onStarPress?: (rating: number) => void;
   isHalfStarEnabled?: boolean;
+  rounding: 'up' | 'down';
 };
 
 type State = {
@@ -29,8 +30,13 @@ export default class Stars extends Component {
   constructor() {
     super(...arguments);
     autobind(this);
+    let {rounding} = this.props;
     this.state = {
-      activeIndex: this.props.rate === 0 && !this.props.isActive ? 1 : this.props.rate,
+      activeIndex: this.props.rate === 0 ?
+        1 :
+        rounding === 'up' ?
+          Math.round(this.props.rate * 2) / 2 :
+          Math.floor(this.props.rate * 2) / 2,
     };
   }
   _changeActiveIndex(i: number) {
